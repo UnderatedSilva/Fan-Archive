@@ -96,22 +96,44 @@
 
   const awardData = [
     {
-      icon: '🏆',
       event: 'Derana CloseUp Music Video Awards 2025',
       name: 'Best Alternative Video',
       song: 'Mawa Hoyan',
-      detail: 'Co-Directed with Sahan Wickramarachchi',
-      image: 'assets/awards.jpg',
-      caption: 'Derana CloseUp Music Video Awards'
+      detail: 'Awarded Best Alternative Video for "Mawa Hoyan"',
+      image: 'assets/derana music awards.jpg',
+      caption: 'Derana Music Video Awards'
     },
     {
-      icon: '🏆',
       event: 'Derana CloseUp Music Video Awards 2025',
       name: 'Best R&B Video',
       song: 'Aprakashitha',
-      detail: 'Directed by Dhanith Sri himself',
+      detail: 'Awarded Best R&B Video for "Aprakashitha"',
       image: 'assets/derana music awards.jpg',
-      caption: 'Derana Music Awards'
+      caption: 'Derana Music Video Awards'
+    },
+    {
+      event: 'Derana CloseUp Music Video Awards 2025',
+      name: 'Jury Award — Cinematography',
+      song: 'Mawa Hoyan',
+      detail: 'Jury recognition for cinematography for "Mawa Hoyan"',
+      image: 'assets/derana music awards.jpg',
+      caption: 'Derana Music Video Awards'
+    },
+    {
+      event: 'Derana CloseUp Music Video Awards 2025',
+      name: 'Award for Collaborating Talents',
+      song: 'Mawa Hoyan & Aprakashitha',
+      detail: 'Recognising collaborating talents and crew across both music videos',
+      image: 'assets/derana music awards.jpg',
+      caption: 'Derana Music Video Awards'
+    },
+    {
+      event: 'Raigam Tele Awards',
+      name: 'Best Music Video',
+      song: 'Pandama',
+      detail: 'Awarded Best Music Video at the Raigam Tele Awards',
+      image: 'assets/awards.jpg',
+      caption: 'Raigam Tele Awards'
     }
   ];
 
@@ -307,7 +329,7 @@
           <img class="award-image" src="${item.image}" alt="${item.caption}" loading="eager" />
           <p class="award-caption">${item.caption}</p>
         </div>
-        <div class="award-icon">${item.icon}</div>
+        ${item.icon ? `<div class="award-icon">${item.icon}</div>` : ''}
         <div class="award-event">${item.event}</div>
         <h3 class="award-name">${item.name}</h3>
         <div class="award-bar"></div>
