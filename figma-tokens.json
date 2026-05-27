@@ -1,0 +1,29 @@
+{
+  "colors": {
+    "bg-dark": "#0b0c12",
+    "panel-dark": "#0f1016",
+    "muted": "#7b6a86",
+    "white": "#ffffff",
+    "accent-purple": "#8a4cff",
+    "accent-purple-2": "#6f3bd6",
+    "card-bg": "#0b0f14"
+  },
+  "fonts": {
+    "heading": "Archivo Black, Montserrat, or Anton (recommended)",
+    "body": "Inter, Roboto, or system-sans"
+  },
+  "type": {
+    "h1": { "size": "96px", "weight": 800, "letterSpacing": "-2px" },
+    "h2": { "size": "48px", "weight": 700 },
+    "h3": { "size": "28px", "weight": 700 },
+    "body": { "size": "16px", "weight": 400 }
+  },
+  "spacing": {
+    "none": "0",
+    "xs": "8px",
+    "sm": "16px",
+    "md": "24px",
+    "lg": "48px",
+    "xl": "96px"
+  }
+}
