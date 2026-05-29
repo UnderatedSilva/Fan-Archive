@@ -3,92 +3,146 @@
     {
       title: 'Pandama',
       image: 'assets/EHEMA DEWAL NA HITHE MAGE-1.png',
-      sub: 'Figma export'
+      genre: 'Alternative Fusion',
+      year: '2018',
+      desc: 'The breakthrough fusion track that reshaped the contemporary Sri Lankan music scene, blending alternative rock with traditional folk rhythms and soaring synth structures.',
+      youtubeId: 'kYJvYgJ1RGs'
     },
     {
       title: 'Adariye',
       image: 'assets/ADARIYE.png',
-      sub: 'Figma export'
+      genre: 'Contemporary Pop',
+      year: '2020',
+      desc: 'A melodic acoustic-led ballad that showcases Dhanith\'s range and expressive vocals, speaking to the simplicity of deep romance.',
+      youtubeId: '4W7oK3h-N3Y'
     },
     {
       title: 'Alokawarsha',
       image: 'assets/ALOKWARSHA.png',
-      sub: 'Figma export'
+      genre: 'Acoustic Pop',
+      year: '2021',
+      desc: 'A vibrant, uplifting single that celebrates the richness of human connections and the limitlessness of creative expression.',
+      youtubeId: 'NqQp6ZtYlq8'
     },
     {
       title: 'Aetha Isawwe',
       image: 'assets/AETHA ISAWWE.png',
-      sub: 'Figma export'
-    },
-        {
-      title: 'Aetha Isawwe',
-      image: 'assets/sandaganawa.png',
-      sub: 'Figma export'
+      genre: 'Symphonic Indie',
+      year: '2021',
+      desc: 'An expansive track featuring soaring orchestral backing and rich storytelling, tracing journeys through long distances and hearts.',
+      youtubeId: 'b3C18j9iR54'
     },
     {
-      title: 'Aetha Isawwe',
+      title: 'Sandaganawa',
+      image: 'assets/sandaganawa.png',
+      genre: 'Classical Fusion',
+      year: '2019',
+      desc: 'An elegant fusion piece that weaves classical Sri Lankan vocal textures with a modern chamber-pop arrangement.',
+      youtubeId: 'w13_LSwqC98'
+    },
+    {
+      title: 'Raplanthaya',
       image: 'assets/rap lanthaya.png',
-      sub: 'Figma export'
+      genre: 'Alternative Hip-Hop',
+      year: '2023',
+      desc: 'The title track from Dhanith Sri\'s experimental rap album, introducing fans to his rapid flow and sharp lyrical insights.',
+      youtubeId: 'P2t8Z7tQj1k'
     },
     {
       title: 'Aloke',
       image: 'assets/ALOKE.png',
-      sub: 'Figma export'
+      genre: 'Electronic Pop',
+      year: '2020',
+      desc: 'A glowing synth-pop track that builds into an energetic anthem of light, resilience, and personal discovery.',
+      youtubeId: 's8O3_Vn2w4g'
     },
     {
       title: 'Ananthe Pura',
       image: 'assets/ANANTHE PURA.png',
-      sub: 'Figma export'
+      genre: 'Soul / Ballad',
+      year: '2022',
+      desc: 'A deep, soulful composition with ambient guitars and a slow-burning melody that travels to the edge of the infinite.',
+      youtubeId: '7Lp5q8R92Qc'
     },
     {
       title: 'Apa Hamuwee',
       image: 'assets/APA HAMUWEE.png',
-      sub: 'Figma export'
+      genre: 'Indie Folk',
+      year: '2020',
+      desc: 'A wistful acoustic song detailing a serendipitous encounter, featuring delicate classical guitar and poetic Sinhala lyrics.',
+      youtubeId: 'nQ5p_Wn1Q3g'
     },
     {
       title: 'Digasiye',
       image: 'assets/DIGASIYE.png',
-      sub: 'Figma export'
+      genre: 'Acoustic Pop',
+      year: '2021',
+      desc: 'A bouncy, feel-good romantic single featuring rhythmic guitar strumming and a light-hearted, infectious chorus.',
+      youtubeId: '3x8c1b2t_4g'
     },
     {
       title: 'Ehema Dewal Na Hithe Mage',
       image: 'assets/EHEMA DEWAL NA HITHE MAGE.png',
-      sub: 'Figma export'
+      genre: 'Alternative Rock',
+      year: '2019',
+      desc: 'An emotional, raw rock track addressing misunderstandings, filled with high-energy drum rolls and passionate vocal runs.',
+      youtubeId: '1t8p4Q7f9wU'
     },
     {
       title: 'Gindara',
       image: 'assets/GINDARA.png',
-      sub: 'Figma export'
+      genre: 'Electro Rock',
+      year: '2022',
+      desc: 'A fiery track that blends punchy rock drums, fuzzy electric guitars, and high-pitched vocal textures for a high-intensity listen.',
+      youtubeId: '5Q8e7q8b_1g'
     },
     {
       title: 'Ithihasaye Katha',
       image: 'assets/ITHIHASAYE KATHA.png',
-      sub: 'Figma export'
+      genre: 'Historical Narrative',
+      year: '2021',
+      desc: 'A powerful anthem exploring stories of the past, featuring rich cultural metaphors and high-production acoustic instrumentation.',
+      youtubeId: '4a8c9b2t_1g'
     },
     {
       title: 'Naukawa',
       image: 'assets/NAUKAWA.png',
-      sub: 'Figma export'
+      genre: 'Dream Pop',
+      year: '2022',
+      desc: 'A serene musical voyage that uses a sailboat metaphor to describe moving forward through the storms of life.',
+      youtubeId: '8p7c1b2t_5g'
     },
     {
       title: 'Niwalanna Ma',
       image: 'assets/NIWALANNA MA.png',
-      sub: 'Figma export'
+      genre: 'Lyrical Fusion',
+      year: '2022',
+      desc: 'A comforting song featuring calm acoustic production and lush vocal harmonies, offering solace and healing.',
+      youtubeId: '2x7b9c1t_3g'
     },
     {
       title: 'Pawee',
       image: 'assets/PAWEE.png',
-      sub: 'Figma export'
+      genre: 'Ambient Pop',
+      year: '2020',
+      desc: 'A floating, atmospheric single with ambient pad synths and a gentle rhythm that invites the listener to drift away.',
+      youtubeId: '9q8c1b2t_8g'
     },
     {
       title: 'Roja',
       image: 'assets/ROJA.png',
-      sub: 'Figma export'
+      genre: 'Romantic Acoustic',
+      year: '2021',
+      desc: 'A sweet, lyrical dedication built around soft acoustic layers and direct, heartfelt declarations of love.',
+      youtubeId: '7p8c1b2t_9g'
     },
     {
       title: 'Wedikawe',
       image: 'assets/WEDIKAWE.png',
-      sub: 'Figma export'
+      genre: 'Theatrical Rock',
+      year: '2022',
+      desc: 'An energetic, dramatic track that compares life to a stage play, blending rock energy with theatrical vocal delivery.',
+      youtubeId: '1p8c1b2t_2g'
     }
   ];
 
@@ -124,7 +178,7 @@
       name: 'Award for Collaborating Talents',
       song: 'Mawa Hoyan & Aprakashitha',
       detail: 'Recognising collaborating talents and crew across both music videos',
-      image: 'assets/derana music awards.jpg',
+      image: 'assets/trophy.jpg',
       caption: 'Derana Music Video Awards'
     },
     {
@@ -132,7 +186,7 @@
       name: 'Best Music Video',
       song: 'Pandama',
       detail: 'Awarded Best Music Video at the Raigam Tele Awards',
-      image: 'assets/awards.jpg',
+      image: 'assets/raigam.jpg',
       caption: 'Raigam Tele Awards'
     }
   ];
@@ -157,28 +211,58 @@
     'assets/RANDOMS/702144399_1534146894734658_9117525158834842689_n.jpg'
   ];
 
-  const galleryData = _randomFiles.map((src, i) => {
-    const gap = 360; // tighter horizontal rhythm
-    const x = i * gap;
-    const y = (i % 4) * 24; // gentler vertical staggering
-    const widths = [520, 420, 360, 300];
+  const kickers = [
+    'ALOKAWARSHA LIVE, 2025',
+    'STUDIO SESSIONS, 2024',
+    'KANDY CONCERT, 2023',
+    'BEHIND THE SCENES, 2024',
+    'ON STAGE, 2025',
+    'RAPLANTHAYA RELEASE, 2023',
+    'PANDAMA PROMO, 2018',
+    'ACOUSTIC SESSIONS, 2024',
+    'REHEARSALS, 2025',
+    'BACKSTAGE PASS, 2024',
+    'PERADENIYA GIG, 2023',
+    'TV INTERVIEW, 2024',
+    'MONOCHROME STUDY, 2023',
+    'FESTIVAL LIVE, 2025'
+  ];
+
+  const photoCards = _randomFiles.map((src, i) => {
+    // High-variance staggered layout mapping Lando's screenshot
+    const yOffsets = [-50, 70, -90, 80, -30, 90, -80, 40, -60, 60, -40, 50, -70, 30];
+    const y = yOffsets[i % yOffsets.length];
+    
+    // grander portrait layouts matching Lando's aspect ratios
+    const widths = [480, 380, 440, 340];
     const w = widths[i % widths.length];
-    const h = Math.round(w * 0.75); // consistent aspect ratio for neatness
-    const rotate = ((i % 5) - 2); // -2..2 deg
-    const tone = w > 480 ? 'hero' : w > 360 ? 'tall' : 'small';
-    return { image: src, x, y, w, h, rotate, tone };
+    const h = Math.round(w * 1.25); // Taller portrait framing
+    
+    const rotate = ((i % 5) - 2) * 0.7; // extremely subtle organic rotations
+    const kicker = kickers[i % kickers.length];
+    
+    return { image: src, y, w, h, rotate, kicker };
   });
 
-  // insert a quote card near the middle of the strip
-  const mid = Math.max(3, Math.floor(galleryData.length / 2));
-  galleryData.splice(mid, 0, {
+  // Insert Lando-style quote card in the middle of photoCards
+  const midIndex = Math.max(3, Math.floor(photoCards.length / 2));
+  photoCards.splice(midIndex, 0, {
     type: 'quote',
-    x: mid * 420 + 40,
-    y: 40,
-    w: 480,
-    h: 260,
+    y: -30,
+    w: 520,
+    h: 360,
     title: "It doesn't matter where you start, it's how you progress from there.",
-    copy: '— a clean editorial break inside the strip.'
+    copy: '— DHANITH SRI'
+  });
+
+  // Calculate dynamic non-overlapping absolute x coordinates using cumulative math
+  let currentX = 0;
+  const horizontalSpacing = 160; // Guaranteed separation margin (in pixels) between card borders
+
+  const galleryData = photoCards.map((item) => {
+    item.x = currentX;
+    currentX += item.w + horizontalSpacing;
+    return item;
   });
 
   const songsGrid = document.getElementById('songsGrid');
@@ -197,6 +281,107 @@
   const loader = document.querySelector('.loader');
   const loaderFill = document.querySelector('.loader-fill');
   const html = document.documentElement;
+
+  // Immersive Modal Constants
+  const songModal = document.getElementById('songModal');
+  const modalPoster = document.getElementById('modalPoster');
+  const modalGenre = document.getElementById('modalGenre');
+  const modalYear = document.getElementById('modalYear');
+  const modalSongTitle = document.getElementById('modalSongTitle');
+  const modalDescription = document.getElementById('modalDescription');
+  const modalEmbed = document.getElementById('modalEmbed');
+  const modalYoutubeLink = document.getElementById('modalYoutubeLink');
+  const modalSpotifyLink = document.getElementById('modalSpotifyLink');
+  const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+  function openSongModal(song) {
+    if (!songModal) return;
+
+    modalPoster.src = song.image;
+    modalPoster.alt = `${song.title} artwork`;
+    modalGenre.textContent = song.genre || 'Alternative Fusion';
+    modalYear.textContent = song.year || '2018';
+    modalSongTitle.textContent = song.title;
+    modalDescription.textContent = song.desc || 'A premium track by Dhanith Sri celebrating alternative and traditional Sri Lankan music.';
+
+    // YouTube Embed Player
+    if (song.youtubeId) {
+      modalEmbed.innerHTML = `
+        <iframe src="https://www.youtube.com/embed/${song.youtubeId}?autoplay=0" 
+                title="${song.title} video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>`;
+    } else {
+      modalEmbed.innerHTML = `
+        <div class="no-player-preview">
+          <p>No audio preview available for this track.</p>
+        </div>`;
+    }
+
+    // Streaming Links
+    const searchName = encodeURIComponent(`Dhanith Sri ${song.title}`);
+    modalYoutubeLink.href = song.youtubeId ? `https://www.youtube.com/watch?v=${song.youtubeId}` : `https://www.youtube.com/results?search_query=${searchName}`;
+    modalSpotifyLink.href = `https://open.spotify.com/search/${searchName}`;
+
+    // Display overlay and body scroll-lock
+    songModal.classList.add('is-visible');
+    songModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    // GSAP Immersive Entry Transition
+    gsap.fromTo(songModal, 
+      { opacity: 0 }, 
+      { opacity: 1, duration: 0.4, ease: 'power2.out' }
+    );
+    gsap.fromTo('.modal-wrapper', 
+      { scale: 0.9, y: 30, opacity: 0 }, 
+      { scale: 1, y: 0, opacity: 1, duration: 0.6, ease: 'back.out(1.2)', delay: 0.1 }
+    );
+  }
+
+  function closeSongModal() {
+    if (!songModal || !songModal.classList.contains('is-visible')) return;
+
+    // GSAP Exit Transition
+    gsap.to('.modal-wrapper', {
+      scale: 0.94,
+      y: 20,
+      opacity: 0,
+      duration: 0.35,
+      ease: 'power2.in'
+    });
+    
+    gsap.to(songModal, {
+      opacity: 0,
+      duration: 0.35,
+      ease: 'power2.inOut',
+      onComplete: () => {
+        songModal.classList.remove('is-visible');
+        songModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+        modalEmbed.innerHTML = ''; // Stop video playback
+      }
+    });
+  }
+
+  function initModalEvents() {
+    if (!songModal) return;
+
+    modalCloseBtn.addEventListener('click', closeSongModal);
+    
+    songModal.addEventListener('click', (e) => {
+      if (e.target === songModal) {
+        closeSongModal();
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeSongModal();
+      }
+    });
+  }
 
   let lastScroll = 0;
   let heroPlayed = false;
@@ -309,15 +494,23 @@
       const loading = index < 4 ? 'eager' : 'lazy';
 
       return `
-        <article class="song-card song-card--poster">
-          <a class="song-card-poster" href="${imagePath}" target="_blank" rel="noreferrer" aria-label="Open ${song.title} artwork">
+        <article class="song-card song-card--poster" data-song-index="${index}" data-cursor="PLAY">
+          <div class="song-card-poster">
             <img src="${imagePath}" alt="${song.title} artwork" loading="${loading}" />
-          </a>
+          </div>
           <div class="song-card-meta">
             <h3 class="song-title">${song.title}</h3>
           </div>
         </article>`;
     }).join('');
+
+    // Add click listeners to launch premium modal
+    document.querySelectorAll('.songs-grid .song-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        const index = card.getAttribute('data-song-index');
+        openSongModal(songData[index]);
+      });
+    });
   }
 
   // Collabs removed — no renderCollabs()
@@ -349,16 +542,21 @@
         return `
           <article class="gallery-quote" style="--card-x:${item.x}px;--card-y:${item.y}px;--card-w:${item.w}px;--card-h:${item.h}px;">
             <p class="gallery-quote-text">${item.title}</p>
-            <p class="gallery-quote-copy">${item.copy}</p>
+            <div class="gallery-quote-sig-wrap">
+              <img class="gallery-quote-sig" src="assets/sign.png" alt="Dhanith Sri Signature" />
+            </div>
           </article>
         `;
       }
 
       return `
-          <article class="gallery-card gallery-card--${item.tone || 'base'}" style="--gallery-image:url('${item.image}');--card-x:${item.x}px;--card-y:${item.y}px;--card-w:${item.w}px;--card-h:${item.h}px;--card-rotate:${item.rotate || 0}deg;--card-delay:${index * 0.08}s;">
+        <article class="gallery-card" style="--gallery-image:url('${item.image}');--card-x:${item.x}px;--card-y:${item.y}px;--card-w:${item.w}px;--card-h:${item.h}px;--card-rotate:${item.rotate || 0}deg;--card-delay:${index * 0.08}s;">
+          <div class="gallery-kicker">${item.kicker}</div>
+          <div class="gallery-image-wrap">
             <div class="gallery-image"></div>
-          </article>
-        `;
+          </div>
+        </article>
+      `;
     }).join('');
   }
 
@@ -685,6 +883,7 @@
     renderAwards();
     renderGallery();
     initFanLetters();
+    initModalEvents();
     prepareHeroChars();
     startLoader();
     bootAnimations();

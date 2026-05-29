@@ -29,8 +29,9 @@
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav class="mobile-menu-inner" aria-label="Mobile navigation">
       <a class="mobile-nav-link" href="#about">About</a>
+      <a class="mobile-nav-link" href="#gallery">Gallery</a>
       <a class="mobile-nav-link" href="#music">Music</a>
-        <a class="mobile-nav-link" href="https://shop.dhanithsri.lk/shop/" target="_blank" rel="noopener">Shop</a>
+      <a class="mobile-nav-link" href="https://shop.dhanithsri.lk/shop/" target="_blank" rel="noopener">Shop</a>
       <a class="mobile-nav-link" href="#awards">Awards</a>
       <a class="mobile-nav-link" href="#connect">Connect</a>
     </nav>
@@ -39,11 +40,13 @@
   <header class="site-nav" id="siteNav">
     <div class="nav-inner">
       <a class="brand" href="#home" aria-label="Dhanith Sri home">
-        
+        <span class="brand-mark">DHANITH SRI</span>
+        <span class="brand-sub">fan site</span>
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
         <a href="#music">Music</a>
         <a href="https://shop.dhanithsri.lk/shop/" target="_blank" rel="noopener">Shop</a>
         <a href="#awards">Awards</a>
@@ -80,9 +83,11 @@
           <span class="char-wrap"><span class="char">R</span></span>
           <span class="char-wrap"><span class="char">I</span></span>
         </p>
-        <p class="hero-sinhala"></p>
+        <p class="hero-sinhala">ධනිත් ශ්‍රී</p>
         <div class="hero-tags" aria-label="Quick facts">
-          
+          <span class="hero-tag">Singer</span>
+          <span class="hero-tag">Songwriter</span>
+          <span class="hero-tag">Composer</span>
         </div>
       </div>
 
@@ -181,6 +186,12 @@
             </p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section section--gallery" id="gallery">
+      <div class="gallery-pin">
+        <div class="gallery-track" id="galleryTrack"></div>
       </div>
     </section>
 
@@ -388,5 +399,47 @@
       </div>
     </div>
   </footer>
+
+  <!-- Immersive Song Modal -->
+  <div class="modal-overlay" id="songModal" aria-hidden="true">
+    <div class="modal-wrapper">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="modal-body">
+        <div class="modal-left">
+          <div class="modal-poster-wrap">
+            <img class="modal-poster" id="modalPoster" src="" alt="Song Poster" />
+          </div>
+        </div>
+        <div class="modal-right">
+          <div class="modal-header-info">
+            <span class="modal-genre" id="modalGenre">Alternative Fusion</span>
+            <span class="modal-year" id="modalYear">2018</span>
+          </div>
+          <h2 class="modal-song-title" id="modalSongTitle">Pandama</h2>
+          <p class="modal-artist">Dhanith Sri</p>
+          <div class="modal-divider"></div>
+          <p class="modal-description" id="modalDescription">
+            The breakthrough fusion track that reshaped the contemporary Sri Lankan music scene, blending alternative rock with traditional folk vibes.
+          </p>
+          
+          <!-- Interactive Embed Section -->
+          <div class="modal-player-wrap">
+            <div class="modal-player-header">STREAM / PLAY TRACK</div>
+            <div class="modal-embed" id="modalEmbed">
+              <!-- Dynamically populated iframe -->
+            </div>
+          </div>
+          
+          <div class="modal-links">
+            <a class="modal-link-btn modal-link-btn--youtube" id="modalYoutubeLink" href="#" target="_blank" rel="noopener">YouTube Video</a>
+            <a class="modal-link-btn modal-link-btn--spotify" id="modalSpotifyLink" href="#" target="_blank" rel="noopener">Spotify Stream</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
