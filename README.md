@@ -1,5 +1,6 @@
 # Fan-Archive
-<img width="1026" height="559" alt="image" src="https://github.com/user-attachments/assets/8aa649f5-3e68-4976-8d21-ae1369e1749c" />
+<img width="1170" height="2532" alt="IMG_2433" src="https://github.com/user-attachments/assets/0c753680-3aba-4d09-a201-ba6a12a369c0" />
+
 
 
 This project was built with a very specific purpose in mind: to leave a heartfelt note and a dedicated space for Dhanith. 
