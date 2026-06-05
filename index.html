@@ -13,24 +13,22 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitType.min.js"></script>
-  <!-- Firebase (Realtime Database) - add your config below as window.FIREBASE_CONFIG before script.js loads -->
+  <!-- Firebase (Realtime Database) - config injected below -->
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
-  <!--
-    Paste your Firebase config here (replace values) or inject it from environment.
-    Example:
-    <script>
-      window.FIREBASE_CONFIG = {
-        apiKey: "...",
-        authDomain: "...",
-        databaseURL: "https://<YOUR_PROJECT>.firebaseio.com",
-        projectId: "...",
-        storageBucket: "...",
-        messagingSenderId: "...",
-        appId: "..."
-      };
-    </script>
-  -->
+  <script>
+    // Firebase web config provided by project owner
+    window.FIREBASE_CONFIG = {
+      apiKey: "REDACTED_API_KEY",
+      authDomain: "dhanith-sri.firebaseapp.com",
+      databaseURL: "https://dhanith-sri-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "dhanith-sri",
+      storageBucket: "dhanith-sri.firebasestorage.app",
+      messagingSenderId: "902487593853",
+      appId: "1:902487593853:web:cb216add874983cabd3214",
+      measurementId: "G-N34LWM3WVP"
+    };
+  </script>
   <script defer src="script.js?v=2"></script>
 </head>
 <body class="is-loading">
