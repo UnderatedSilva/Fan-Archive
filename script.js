@@ -196,37 +196,33 @@
   // Build gallery entries from the RANDOMS folder (use every file)
   const _randomFiles = [
     'assets/RANDOMS/470177923_1131732371642781_512425327986212773_n.jpg',
+    'assets/RANDOMS/470547007_18349764952123247_1220809200882510745_n.jpg',
+    'assets/RANDOMS/470569859_18349772965123247_8669310923941228912_n.jpg',
     'assets/RANDOMS/470806580_1132753284874023_3412145222618926203_n.jpg',
     'assets/RANDOMS/472870004_1147064010109617_3693071732434534419_n.jpg',
+    'assets/RANDOMS/474069742_18354259720123247_6344849580537459872_n.jpg',
+    'assets/RANDOMS/474087042_18354132808123247_2137424726593400067_n.jpg',
     'assets/RANDOMS/475662289_1163514778464540_6268218819984952902_n.jpg',
     'assets/RANDOMS/476292691_1167127891436562_172734698715751652_n.jpg',
     'assets/RANDOMS/476442722_1169153104567374_2009302438439957908_n.jpg',
     'assets/RANDOMS/476960159_1170543517761666_4526326489397221372_n.jpg',
     'assets/RANDOMS/479957046_1174401994042485_4445357931132210670_n.jpg',
     'assets/RANDOMS/482322391_1190412049108146_2555399154807959343_n.jpg',
+    'assets/RANDOMS/491513762_9584673498265007_303860242445824482_n.jpg',
+    'assets/RANDOMS/491699450_9583033781762312_3465224236009169480_n (1).jpg',
     'assets/RANDOMS/499401255_1246188680197149_8674648000627975689_n.jpg',
     'assets/RANDOMS/530222836_1311828970299786_1114778697364241605_n.jpg',
     'assets/RANDOMS/531670048_1311829043633112_3766366517050029322_n.jpg',
     'assets/RANDOMS/644863439_1472814730867875_2221428858281783622_n.jpg',
-    'assets/RANDOMS/702144399_1534146894734658_9117525158834842689_n.jpg'
+    'assets/RANDOMS/69997929_2484931151530005_5685045491553796096_n.jpg',
+    'assets/RANDOMS/702144399_1534146894734658_9117525158834842689_n.jpg',
+    
+    
   ];
 
-  const kickers = [
-    'ALOKAWARSHA LIVE, 2025',
-    'STUDIO SESSIONS, 2024',
-    'KANDY CONCERT, 2023',
-    'BEHIND THE SCENES, 2024',
-    'ON STAGE, 2025',
-    'RAPLANTHAYA RELEASE, 2023',
-    'PANDAMA PROMO, 2018',
-    'ACOUSTIC SESSIONS, 2024',
-    'REHEARSALS, 2025',
-    'BACKSTAGE PASS, 2024',
-    'PERADENIYA GIG, 2023',
-    'TV INTERVIEW, 2024',
-    'MONOCHROME STUDY, 2023',
-    'FESTIVAL LIVE, 2025'
-  ];
+  // Gallery kicker labels (short captions for photo cards)
+  
+
 
   const photoCards = _randomFiles.map((src, i) => {
     // High-variance staggered layout mapping Lando's screenshot
@@ -239,22 +235,11 @@
     const h = Math.round(w * 1.25); // Taller portrait framing
     
     const rotate = ((i % 5) - 2) * 0.7; // extremely subtle organic rotations
-    const kicker = kickers[i % kickers.length];
-    
-    return { image: src, y, w, h, rotate, kicker };
+
+    return { image: src, y, w, h, rotate };
   });
 
-  // Insert Lando-style quote card in the middle of photoCards
-  const midIndex = Math.max(3, Math.floor(photoCards.length / 2));
-  photoCards.splice(midIndex, 0, {
-    type: 'quote',
-    y: -30,
-    w: 520,
-    h: 360,
-    title: "It doesn't matter where you start, it's how you progress from there.",
-    copy: '— DHANITH SRI'
-  });
-
+  
   // Calculate dynamic non-overlapping absolute x coordinates using cumulative math
   let currentX = 0;
   const horizontalSpacing = 160; // Guaranteed separation margin (in pixels) between card borders
@@ -518,10 +503,6 @@
   function renderAwards() {
     awardsGrid.innerHTML = awardData.map((item) => `
       <article class="award-card">
-        <div class="award-media">
-          <img class="award-image" src="${item.image}" alt="${item.caption}" loading="eager" />
-          <p class="award-caption">${item.caption}</p>
-        </div>
         ${item.icon ? `<div class="award-icon">${item.icon}</div>` : ''}
         <div class="award-event">${item.event}</div>
         <h3 class="award-name">${item.name}</h3>
@@ -550,8 +531,7 @@
       }
 
       return `
-        <article class="gallery-card" style="--gallery-image:url('${item.image}');--card-x:${item.x}px;--card-y:${item.y}px;--card-w:${item.w}px;--card-h:${item.h}px;--card-rotate:${item.rotate || 0}deg;--card-delay:${index * 0.08}s;">
-          <div class="gallery-kicker">${item.kicker}</div>
+        <article class="gallery-card" style="--gallery-image:url('${encodeURI(item.image)}');--card-x:${item.x}px;--card-y:${item.y}px;--card-w:${item.w}px;--card-h:${item.h}px;--card-rotate:${item.rotate || 0}deg;--card-delay:${index * 0.08}s;">
           <div class="gallery-image-wrap">
             <div class="gallery-image"></div>
           </div>
