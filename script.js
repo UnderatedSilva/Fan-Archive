@@ -192,63 +192,7 @@
   ];
 
   const fanLettersStorageKey = 'dhanith-sri-fan-letters';
-
-  // Build gallery entries from the RANDOMS folder (use every file)
-  const _randomFiles = [
-    'assets/RANDOMS/470177923_1131732371642781_512425327986212773_n.jpg',
-    'assets/RANDOMS/470547007_18349764952123247_1220809200882510745_n.jpg',
-    'assets/RANDOMS/470569859_18349772965123247_8669310923941228912_n.jpg',
-    'assets/RANDOMS/470806580_1132753284874023_3412145222618926203_n.jpg',
-    'assets/RANDOMS/472870004_1147064010109617_3693071732434534419_n.jpg',
-    'assets/RANDOMS/474069742_18354259720123247_6344849580537459872_n.jpg',
-    'assets/RANDOMS/474087042_18354132808123247_2137424726593400067_n.jpg',
-    'assets/RANDOMS/475662289_1163514778464540_6268218819984952902_n.jpg',
-    'assets/RANDOMS/476292691_1167127891436562_172734698715751652_n.jpg',
-    'assets/RANDOMS/476442722_1169153104567374_2009302438439957908_n.jpg',
-    'assets/RANDOMS/476960159_1170543517761666_4526326489397221372_n.jpg',
-    'assets/RANDOMS/479957046_1174401994042485_4445357931132210670_n.jpg',
-    'assets/RANDOMS/482322391_1190412049108146_2555399154807959343_n.jpg',
-    'assets/RANDOMS/491513762_9584673498265007_303860242445824482_n.jpg',
-    'assets/RANDOMS/491699450_9583033781762312_3465224236009169480_n (1).jpg',
-    'assets/RANDOMS/499401255_1246188680197149_8674648000627975689_n.jpg',
-    'assets/RANDOMS/530222836_1311828970299786_1114778697364241605_n.jpg',
-    'assets/RANDOMS/531670048_1311829043633112_3766366517050029322_n.jpg',
-    'assets/RANDOMS/644863439_1472814730867875_2221428858281783622_n.jpg',
-    'assets/RANDOMS/69997929_2484931151530005_5685045491553796096_n.jpg',
-    'assets/RANDOMS/702144399_1534146894734658_9117525158834842689_n.jpg',
-    
-    
-  ];
-
-  // Gallery kicker labels (short captions for photo cards)
   
-
-
-  const photoCards = _randomFiles.map((src, i) => {
-    // High-variance staggered layout mapping Lando's screenshot
-    const yOffsets = [-50, 70, -90, 80, -30, 90, -80, 40, -60, 60, -40, 50, -70, 30];
-    const y = yOffsets[i % yOffsets.length];
-    
-    // grander portrait layouts matching Lando's aspect ratios
-    const widths = [480, 380, 440, 340];
-    const w = widths[i % widths.length];
-    const h = Math.round(w * 1.25); // Taller portrait framing
-    
-    const rotate = ((i % 5) - 2) * 0.7; // extremely subtle organic rotations
-
-    return { image: src, y, w, h, rotate };
-  });
-
-  
-  // Calculate dynamic non-overlapping absolute x coordinates using cumulative math
-  let currentX = 0;
-  const horizontalSpacing = 160; // Guaranteed separation margin (in pixels) between card borders
-
-  const galleryData = photoCards.map((item) => {
-    item.x = currentX;
-    currentX += item.w + horizontalSpacing;
-    return item;
-  });
 
   const songsGrid = document.getElementById('songsGrid');
   const awardsGrid = document.getElementById('awardsGrid');
@@ -259,7 +203,6 @@
   const fanNameInput = document.getElementById('fanName');
   const fanSubjectInput = document.getElementById('fanSubject');
   const fanMessageInput = document.getElementById('fanMessage');
-  const galleryTrack = document.getElementById('galleryTrack');
   const mobileMenu = document.getElementById('mobileMenu');
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.getElementById('siteNav');
