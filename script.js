@@ -192,6 +192,9 @@
   ];
 
   const fanLettersStorageKey = 'dhanith-sri-fan-letters';
+  // Firebase integration for shared fan letters
+  let firebaseEnabled = false;
+  let firebaseRef = null;
   
 
   const songsGrid = document.getElementById('songsGrid');
@@ -328,7 +331,39 @@
   }
 
   function saveFanLetters(letters) {
-    window.localStorage.setItem(fanLettersStorageKey, JSON.stringify(letters));
+    try {
+      window.localStorage.setItem(fanLettersStorageKey, JSON.stringify(letters));
+    } catch (e) {
+      console.error('localStorage save failed', e);
+    }
+  }
+
+  function initFirebase() {
+    if (typeof window.FIREBASE_CONFIG !== 'object' || typeof firebase === 'undefined') {
+      return;
+    }
+
+    try {
+      // Initialize app only once
+      if (!firebase.apps || !firebase.apps.length) {
+        firebase.initializeApp(window.FIREBASE_CONFIG);
+      }
+
+      firebaseRef = firebase.database().ref('fanLetters');
+      firebaseEnabled = true;
+
+      // Listen for realtime updates and mirror into localStorage
+      firebaseRef.on('value', (snapshot) => {
+        const val = snapshot.val();
+        const arr = val ? Object.values(val).sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) : [];
+        saveFanLetters(arr);
+        renderFanLetters();
+      });
+    } catch (err) {
+      console.error('Firebase init error:', err);
+      firebaseEnabled = false;
+      firebaseRef = null;
+    }
   }
 
   function escapeHtml(value) {
@@ -386,6 +421,9 @@
       return;
     }
 
+    // Attempt to initialize Firebase (if config provided on the page)
+    initFirebase();
+
     renderFanLetters();
 
     fanLetterForm.addEventListener('submit', (event) => {
@@ -407,8 +445,17 @@
         message,
         createdAt: new Date().toISOString()
       });
-
+      // Always save locally for immediate UX
       saveFanLetters(letters.slice(0, 50));
+
+      // If Firebase is available, push the new letter to the shared DB
+      if (firebaseEnabled && firebaseRef) {
+        try {
+          firebaseRef.push(letters[0]).catch((e) => console.error('Firebase push failed', e));
+        } catch (e) {
+          console.error('Firebase push error', e);
+        }
+      }
       fanLetterForm.reset();
       fanLetterStatus.textContent = 'Your fan letter was saved on this device.';
       renderFanLetters();
