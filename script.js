@@ -195,6 +195,7 @@
   // Firebase integration for shared fan letters
   let firebaseEnabled = false;
   let firebaseRef = null;
+  let firebaseLettersCache = null;
   
 
   const songsGrid = document.getElementById('songsGrid');
@@ -321,6 +322,10 @@
   let cursorScaleTween = null;
 
   function loadFanLetters() {
+    if (firebaseEnabled && Array.isArray(firebaseLettersCache)) {
+      return firebaseLettersCache;
+    }
+
     try {
       const raw = window.localStorage.getItem(fanLettersStorageKey);
       const letters = raw ? JSON.parse(raw) : [];
@@ -356,6 +361,7 @@
       firebaseRef.on('value', (snapshot) => {
         const val = snapshot.val();
         const arr = val ? Object.values(val).sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) : [];
+        firebaseLettersCache = arr;
         saveFanLetters(arr);
         renderFanLetters();
       });
@@ -455,6 +461,7 @@
         } catch (e) {
           console.error('Firebase push error', e);
         }
+        firebaseLettersCache = letters.slice(0, 50);
       }
       fanLetterForm.reset();
       fanLetterStatus.textContent = 'Your fan letter was saved on this device.';
