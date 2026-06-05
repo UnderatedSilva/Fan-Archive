@@ -1,5 +1,6 @@
 # Fan-Archive
-<img width="1170" height="2532" alt="IMG_2433" src="https://github.com/user-attachments/assets/0c753680-3aba-4d09-a201-ba6a12a369c0" />
+<img width="1791" height="585" alt="image" src="https://github.com/user-attachments/assets/9ff8db34-9f36-4f83-94b3-b49425fd7960" />
+
 
 
 
