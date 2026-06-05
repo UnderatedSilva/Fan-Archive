@@ -82,6 +82,10 @@ main {
   padding: 120px 80px;
 }
 
+#fan-letter-topics {
+  scroll-margin-top: 120px;
+}
+
 .section--primary {
   background: var(--bg-primary);
 }
