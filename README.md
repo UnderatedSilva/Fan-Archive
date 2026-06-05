@@ -1,24 +1,17 @@
-# Dhanith Sri Fan Site
+# Fan-Archive
+<img width="1026" height="559" alt="image" src="https://github.com/user-attachments/assets/8aa649f5-3e68-4976-8d21-ae1369e1749c" />
 
-Static fan site for Dhanith Sri.
 
-## Local development
+This project was built with a very specific purpose in mind: to leave a heartfelt note and a dedicated space for Dhanith. 
 
-Open `index.html` directly, or serve the folder with any static server.
+As a huge fan, I wanted to create a meaningful, central hub to archive memories, celebrate their work, and leave a personal message showing our appreciation. It’s a small token of gratitude built out of pure admiration for everything he does.
 
-## Deploy to Vercel
+## 🚀 Features
+* **A Special Note for Dhanith:** A dedicated message expressing our support.
+* **Curated Fan Gallery:** A clean space for archived media, updates, and highlights.
+* **Responsive Design:** Made to look beautiful and load smoothly on both mobile and desktop.
 
-This project is a static site, so it can be deployed directly from the repository root.
-
-1. Push this folder to a GitHub repository.
-2. Open Vercel and choose **Add New Project**.
-3. Import the GitHub repository.
-4. Keep the project root set to the repository root.
-5. Leave the build command empty.
-6. Leave the output directory empty.
-7. Deploy.
-
-## Notes
-
-- `vercel.json` is already included for clean static hosting.
-- The main entry file is `index.html`.
+## 🛠️ Built With
+* HTML5
+* CSS3
+* JavaScript
