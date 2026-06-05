@@ -807,14 +807,22 @@
   }
 
   function initPage() {
-    renderSongs();
-    renderAwards();
-    renderGallery();
-    initFanLetters();
-    initModalEvents();
-    prepareHeroChars();
+    // Start loader immediately so the page doesn't get visually stuck
+    // if any subsequent initialization throws an error.
     startLoader();
-    bootAnimations();
+
+    try {
+      renderSongs();
+      renderAwards();
+      renderGallery();
+      initFanLetters();
+      initModalEvents();
+      prepareHeroChars();
+      bootAnimations();
+    } catch (err) {
+      // Log and continue — loader already running.
+      console.error('initPage error:', err);
+    }
   }
 
   function bootAnimations() {
