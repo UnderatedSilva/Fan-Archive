@@ -457,11 +457,16 @@
   }
 
   function renderGallery() {
-    if (!galleryTrack) {
+    // Guard: gallery markup/data were removed from the page in some builds.
+    // Use `typeof` checks to avoid ReferenceError when variables/elems don't exist.
+    if (typeof galleryTrack === 'undefined' || typeof galleryData === 'undefined') {
       return;
     }
 
-    galleryTrack.innerHTML = galleryData.map((item, index) => {
+    const galleryTrackEl = document.getElementById('galleryTrack');
+    if (!galleryTrackEl) return;
+
+    galleryTrackEl.innerHTML = galleryData.map((item, index) => {
       if (item.type === 'quote') {
         return `
           <article class="gallery-quote" style="--card-x:${item.x}px;--card-y:${item.y}px;--card-w:${item.w}px;--card-h:${item.h}px;">
